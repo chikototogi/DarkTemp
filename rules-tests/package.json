@@ -1,0 +1,14 @@
+{
+  "name": "darktemp-rules-tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "firebase emulators:exec --only database --project demo-darktemp --config ../firebase.json \"node --test rules.test.mjs\""
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "5.0.0",
+    "firebase": "12.4.0",
+    "firebase-tools": "14.20.0"
+  }
+}
